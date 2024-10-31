@@ -1,0 +1,76 @@
+* {
+    display: flexbox;
+    
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-style: italic;
+      
+}
+
+/* style.
+
+css */
+
+div {
+    display: flex;
+    color:  rgb(85, 63, 34);
+    text-align: center;
+}
+.introdelibro {
+    background-color: black;
+    color: beige;
+    display: flex; /* Para colocar texto e imagen uno al lado del otro */
+    justify-content: space-between; /* Para distribuir el espacio entre ambos */
+    padding: 20px;
+  }
+  
+  .introdelibro img {
+    max-width: 300px; /* Ajusta el ancho máximo de la imagen */
+  }
+  
+  .resumcap8 {
+    background-color: rgb(85, 63, 34);
+    color: beige;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .form {
+    text-align: center;
+    background-color: bisque;
+  }
+
+
+
+
+  @media (max-width: 768px) {
+    /* Estilos específicos para dispositivos móviles */
+    .div {
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .introdelibro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introdelibro img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .resumcap8 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        flex-direction: column;
+        align-items: center;
+        flex: 100%;
+    }
+}
